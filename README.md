@@ -1,0 +1,17 @@
+# Workflow Automation with Cursor
+- https://github.com/czlonkowski/n8n-mcp
+- Docs MCP Server
+	- https://github.com/upstash/context7
+	- https://github.com/arabold/docs-mcp-server
+- N8N Workflows MCP Server
+	- https://gitmcp.io/Zie619/n8n-workflows
+- Build MCP Servers from GIT REPO
+	- https://gitmcp.io
+- Docker N8N MCP Server
+	- docker pull ghcr.io/czlonkowski/n8n-mcp:latest
+- https://github.com/microsoft/playwright-mcp
+- Cursor Setup
+	- Cursor (Menu) --> Cursor Settings --> MCP & Integrations --> Add Custom MCP
+	- Cursor (Menu) --> Cursor Settings --> Rules & Memories --> (Enable) "Include CLAUDE.md in Context"
+- Add the rules for playwright or n8n mcp for the workflows to follow correct standards for generating workflows
+- Both Playwright and n8n mcp server wont work together , we need to disable one of them for the rules to work properly
