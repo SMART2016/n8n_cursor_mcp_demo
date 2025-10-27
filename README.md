@@ -1,4 +1,5 @@
 # Workflow Automation with Cursor
+- The mcp configurations needs npx and node installed
 - https://github.com/czlonkowski/n8n-mcp
 - Docs MCP Server
 	- https://github.com/upstash/context7
