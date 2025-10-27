@@ -1,0 +1,32 @@
+# Project Rules for AI Agents
+
+## Project Overview
+This is an n8n automation project that uses the n8n MCP server to create workflows programmatically.
+
+## Code Standards
+- Use TypeScript for all new code
+- Follow n8n node naming conventions
+- Always validate workflows before deployment
+- Use meaningful variable names
+
+## Workflow Development Guidelines
+1. Always check for existing templates before creating new workflows
+2. Use parallel tool execution for better performance
+3. Validate all node configurations
+4. Never trust default parameter values
+5. Add comprehensive error handling
+
+## Common Patterns
+- Webhook → Process → Notify pattern for event-driven workflows
+- Use IF nodes for conditional logic with proper branch connections
+- Always include error handling nodes
+
+## Testing Requirements
+- Test all workflows with sample data before deployment
+- Verify webhook endpoints are accessible
+- Check all external API connections
+
+## Documentation
+- Document all workflow purposes in workflow descriptions
+- Add comments to complex code nodes
+- Include example payloads for webhook triggers
