@@ -15,3 +15,4 @@
 	- Cursor (Menu) --> Cursor Settings --> Rules & Memories --> (Enable) "Include CLAUDE.md in Context"
 - Add the rules for playwright or n8n mcp for the workflows to follow correct standards for generating workflows
 - Both Playwright and n8n mcp server wont work together , we need to disable one of them for the rules to work properly
+- For Project Specific MCP servers , we create a folder `.cursor` and add `mcp.json` in that folder in the current project repo root.
