@@ -1,3 +1,37 @@
 {
-  "mcpServers": {}
+  "mcpServers": {
+    "n8n-mcp": {
+      "command": "docker",
+      "args": [
+        "run", "-i", "--rm", "--init",
+        "-e", "MCP_MODE=stdio",
+        "-e", "LOG_LEVEL=error",
+        "-e", "DISABLE_CONSOLE_OUTPUT=true",
+        "-e", "N8N_API_URL=http://host.docker.internal:5679",
+        "-e", "N8N_API_KEY=",
+        "-e", "WEBHOOK_SECURITY_MODE=moderate",
+        "ghcr.io/czlonkowski/n8n-mcp:latest"
+      ]
+    },
+    "n8n-workflows Docs": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://gitmcp.io/Zie619/n8n-workflows"
+      ]
+    },
+    "context7 Docs": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://gitmcp.io/upstash/context7"
+      ]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ]
+    }
+  }
 }
